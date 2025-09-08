@@ -25,8 +25,17 @@ jobs:
       run: npm install -g @vscode/vsce
       
     - name: Package extension
-      run: vsce package
-      
+      run: |
+        vsce package
+        ls -la *.vsix
+        
+    - name: Upload extension artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: extension-package-${{ github.ref_name }}
+        path: "*.vsix"
+        retention-days: 90
+        
     - name: Publish to VS Code Marketplace
       run: vsce publish
       env:
@@ -48,6 +57,15 @@ jobs:
           
           ## Installation
           
-          You can install this extension from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=vscode.simplified-themes-mods-pack) or search for "Simplified Themes Mods Pack" in VS Code.
+          You can install this extension from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=xivilay.simplified-themes-mods-pack) or search for "Simplified Themes Mods Pack" in VS Code.
+          
+          ## Manual Installation
+          
+          Download the `.vsix` file from the assets below and install it manually:
+          1. Open VS Code
+          2. Go to Extensions (Ctrl+Shift+X)
+          3. Click the "..." menu and select "Install from VSIX..."
+          4. Select the downloaded `.vsix` file
         draft: false
         prerelease: false
+        files: "*.vsix"
