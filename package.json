@@ -15,6 +15,12 @@
     "categories": ["Themes"],
     "keywords": ["theme", "solarized", "tomorrow-night", "simplified", "visual-studio"],
     "license": "MIT",
+    "files": [
+        "themes/**/*",
+        "README.md",
+        "LICENSE",
+        "CHANGELOG.md"
+    ],
     "engines": {
         "vscode": "^1.0.0"
     },
