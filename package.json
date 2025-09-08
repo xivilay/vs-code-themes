@@ -1,9 +1,21 @@
 {
     "name": "simplified-themes-mods-pack",
+    "displayName": "Simplified Themes Mods Pack",
+    "description": "Color themes with simplified language highlighting, like Visual Studio themes",
     "version": "0.0.2",
-    "publisher": "vscode",
+    "publisher": "xivilay",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/xivilay/vs-code-themes.git"
+    },
+    "homepage": "https://github.com/xivilay/vs-code-themes",
+    "bugs": {
+        "url": "https://github.com/xivilay/vs-code-themes/issues"
+    },
+    "categories": ["Themes"],
+    "keywords": ["theme", "solarized", "tomorrow-night", "simplified", "visual-studio"],
     "engines": {
-        "vscode": "*"
+        "vscode": "^1.0.0"
     },
     "contributes": {
         "themes": [

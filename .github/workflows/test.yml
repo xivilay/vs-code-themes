@@ -1,0 +1,44 @@
+name: Test Extension
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: Install dependencies
+      run: npm install
+      
+    - name: Install vsce
+      run: npm install -g @vscode/vsce
+      
+    - name: Validate package.json
+      run: vsce ls
+      
+    - name: Package extension (dry run)
+      run: vsce package --no-dependencies
+      
+    - name: Check theme files exist
+      run: |
+        test -f themes/solarized_light.json || (echo "solarized_light.json not found" && exit 1)
+        test -f themes/tomorrow_night.json || (echo "tomorrow_night.json not found" && exit 1)
+        echo "All theme files found"
+        
+    - name: Validate JSON syntax
+      run: |
+        python3 -m json.tool themes/solarized_light.json > /dev/null
+        python3 -m json.tool themes/tomorrow_night.json > /dev/null
+        echo "All JSON files are valid"
