@@ -54,12 +54,12 @@
         }
     ],
     "colors": {
-        "editor.foreground":                    "#586E75",
-        "editor.background":                    "#FDF6E3",
-        "editor.lineHighlightBackground":       "#EEE8D5",
-        "statusBar.background":                 "#EEE8D5",
-        "statusBar.foreground":                 "#586E75",
-        // Base
+        "editor.foreground": "#586E75",
+        "editor.background": "#FDF6E3",
+        "editor.lineHighlightBackground": "#EEE8D5",
+        "statusBar.background": "#EEE8D5",
+        "statusBar.foreground": "#586E75",
+
         "focusBorder": "#D3AF86",
         "input.background": "#DDD6C1",
         "input.foreground": "#586E75",
@@ -77,60 +77,59 @@
         "list.hoverBackground": "#DFCA8844",
         "list.inactiveSelectionBackground": "#D1CBB8",
         "list.highlightForeground": "#B58900",
-        // Editor
+
         "editorWidget.background": "#EEE8D5",
         "editorCursor.foreground": "#657B83",
         "editorWhitespace.foreground": "#586E7580",
-        
+
         "editor.selectionBackground": "#EEE8D5",
         "editorHoverWidget.background": "#CCC4B0",
-        // Editor: Peek View
+
         "peekViewResult.background": "#EEE8D5",
         "peekViewEditor.background": "#FFFBF2",
         "peekViewTitle.background": "#EEE8D5",
         "peekView.border": "#B58900",
         "peekViewEditor.matchHighlightBackground": "#7744AA40",
-        // Workbench: Title
+
         "titleBar.activeBackground": "#EEE8D5",
-        // Workbench: Editors
+
         "editorGroup.border": "#DDD6C1",
         "editorGroup.background": "#FFFBF2",
         "editorGroup.dropBackground": "#DDD6C1AA",
         "editorGroupHeader.tabsBackground": "#D9D2C2",
-        // Workbench: Tabs
+
         "tab.border": "#DDD6C1",
         "tab.activeBackground": "#FDF6E3",
         "tab.inactiveForeground": "#586E75",
         "tab.inactiveBackground": "#D3CBB7",
-        // Workbench: Activity Bar
+
         "activityBar.background": "#DDD6C1",
         "activityBar.foreground": "#584c27",
         "activityBar.dropBackground": "#EEE8D5",
         "activityBarBadge.background": "#B58900",
-        // Workbench: Panel
+
         "panel.border": "#DDD6C1",
-        // Workbench: Side Bar
+
         "sideBar.background": "#EEE8D5",
         "sideBarTitle.foreground": "#586E75",
-        // Workbench: Status Bar
+
         "statusBar.debuggingBackground": "#EEE8D5",
         "statusBar.noFolderBackground": "#EEE8D5",
         "statusBarItem.prominentBackground": "#DDD6C1",
         "statusBarItem.prominentHoverBackground": "#DDD6C199",
-        // Workbench: Debug
+
         "debugToolBar.background": "#DDD6C1",
         "debugExceptionWidget.background": "#DDD6C1",
         "debugExceptionWidget.border": "#AB395B",
-        // Workbench: Notifications
+
         "notification.background": "#999178",
-        // Workbench: Quick Open
+
         "pickerGroup.border": "#2AA19899",
         "pickerGroup.foreground": "#2AA19899",
-        // Extensions
+
         "extensionButton.prominentBackground": "#b58900",
         "extensionButton.prominentHoverBackground": "#584c27aa",
-        // Workbench: Terminal
-        // Colors sourced from the official palette http://ethanschoonover.com/solarized
+
         "terminal.ansiBlack": "#073642",
         "terminal.ansiRed": "#dc322f",
         "terminal.ansiGreen": "#859900",
@@ -147,5 +146,5 @@
         "terminal.ansiBrightMagenta": "#6c71c4",
         "terminal.ansiBrightCyan": "#93a1a1",
         "terminal.ansiBrightWhite": "#eee8d5"
-    } 
+    }
 }

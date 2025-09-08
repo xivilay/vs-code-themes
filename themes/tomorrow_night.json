@@ -9,7 +9,7 @@
             "scope": ["comment", "meta.tag.any"],
             "settings": { "foreground": "#969896", "fontStyle": "italic" }
         },
-        
+
         {
             "scope": "string",
             "settings": { "foreground": "#B5BD68" }
@@ -55,11 +55,11 @@
         }
     ],
     "colors": {
-        "editor.foreground":                    "#C5C8C6",
-        "editor.background":                    "#263035",
-        "editor.lineHighlightBackground":       "#2B2D31",
-        "statusBar.background":                 "#333333",
-        "statusBar.foreground":                 "#CCCCCC",
+        "editor.foreground": "#C5C8C6",
+        "editor.background": "#263035",
+        "editor.lineHighlightBackground": "#2B2D31",
+        "statusBar.background": "#333333",
+        "statusBar.foreground": "#CCCCCC",
         "terminal.ansiBlack": "#263035",
         "terminal.ansiRed": "#cc6666",
         "terminal.ansiGreen": "#b5bd68",

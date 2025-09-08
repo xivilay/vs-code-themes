@@ -23,12 +23,12 @@
                 "label": "Solarized Light VS",
                 "uiTheme": "vs",
                 "path": "./themes/solarized_light.json"
-			},
+            },
             {
                 "label": "Tomorrow Night VS",
                 "uiTheme": "vs-dark",
                 "path": "./themes/tomorrow_night.json"
-			}
-		]
+            }
+        ]
     }
 }
