@@ -1,0 +1,22 @@
+{
+    "name": "simplified-themes-mods-pack",
+    "version": "0.0.2",
+    "publisher": "vscode",
+    "engines": {
+        "vscode": "*"
+    },
+    "contributes": {
+        "themes": [
+            {
+                "label": "Solarized Light VS",
+                "uiTheme": "vs",
+                "path": "./themes/solarized_light.json"
+			},
+            {
+                "label": "Tomorrow Night VS",
+                "uiTheme": "vs-dark",
+                "path": "./themes/tomorrow_night.json"
+			}
+		]
+    }
+}
